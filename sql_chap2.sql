@@ -13,11 +13,11 @@ select ename, deptno, decode(deptno, 10, 'accounting',
 select *from emp;
 
 --문제 1
-select empno, ename, job, mgr, hiredate, sal, comm, deptno from emp where substr(hiredate, 4, 2) = '10';
+select *from emp where substr(hiredate, 4, 2) = '10';
 --문제 2
-select empno, ename, job, mgr, hiredate, sal, comm, deptno from emp where substr(hiredate, 1, 2) = '03';
+select *from emp where substr(hiredate, 1, 2) = '03';
 --문제 3
-select empno, ename, job, mgr, hiredate, sal, comm, deptno from emp where substr(ename, 3, 3) = '기';
+select *from emp where substr(ename, 3, 3) = '기';
 --문제 4
 select empno, ename, job, sal, decode(job, '사원', sal*1.2,
                                            '대리', sal*1.15,
